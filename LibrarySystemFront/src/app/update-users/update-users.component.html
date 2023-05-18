@@ -1,0 +1,101 @@
+<header>
+  <!--Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(41, 110, 60)">
+    <div class="container">
+      <a class="navbar-brand" target="_blank" href="#">
+        <p class="img-fluid"
+          style=" border: 1px solid rgb(84, 140, 107); padding: 10px; font-size: 15px; color: azure; border-radius:  20px 4px ; background-color: rgb(3, 59, 28);">
+          LibrarySystem</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link p-3" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link p-3" href="users">Users</a></li>
+          <li class="nav-item"> <a class="nav-link p-3" href="add-users">Add users</a></li>
+
+        </ul>
+        <ul class="navbar-nav">
+          <li>
+            <button type="button" class="btn btn me-5" routerLink="/" style="background-color: azure;">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <br>
+  <!----FORMA ---------------->
+  <div class="container" >
+  <div class="row justify-content-center " >
+    <div class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg  mx-auto my-3 p-3" style="background-color: rgb(238, 248, 243);">
+    <!-- <div class="card d-flex justify-content-center mx-auto my-3 p-5"> -->
+      <h3 >Edit user </h3>
+      <form (ngSubmit) = "onSubmit()">
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Fullname </label>
+          <input type="text" class="form-control" id="fullname" [(ngModel)]="users.fullname" name="fullname">
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Profession </label>
+          <input type="text" class="form-control" id="profession" [(ngModel)]="users.profession" name="profession">
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Birth date</label>
+          <input type="date" class="form-control" id="birthDate" [(ngModel)]="users.birthDate" name="birthDate">
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Address </label>
+          <input type="text" class="form-control" id="address" [(ngModel)]="users.address" name="address">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> City </label>
+          <input type="text" class="form-control" id="city" [(ngModel)]="users.city" name="city">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Phone number </label>
+          <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="users.phoneNumber" name="phoneNumber">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Membership number</label>
+          <input type="text" class="form-control" id="membershipNumber" [(ngModel)]="users.membershipNumber"
+            name="membershipNumber">
+        </div>
+      </div>
+  
+  
+      <div class="form-button pt-4">
+        <button type="submit" class="btn">
+          <span> Submit</span></button>
+      </div>
+  
+    </form>
+    </div>
+  </div>
+  </div>

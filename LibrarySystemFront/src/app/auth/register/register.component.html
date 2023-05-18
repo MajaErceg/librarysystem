@@ -1,0 +1,43 @@
+
+
+  <section fxLayoutAlign="center center">
+    <form style="color:#550019"fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px"
+    #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+        <mat-form-field style="color:#550019">
+            <input type="text" ngModel matInput placeholder="Fullname" name="fullname"
+            required #fullnameInput="ngModel">
+            <mat-error *ngIf="fullnameInput.hasError('required')">Field should not be empty</mat-error>
+        </mat-form-field>
+
+        <mat-form-field style="color:#550019">
+            <input type="email" ngModel matInput placeholder="Email" name="email"
+            required email #emailInput="ngModel">
+            <mat-error *ngIf="emailInput.hasError('required')">Field should not be empty</mat-error>
+            <mat-error *ngIf="!emailInput.hasError('required')">Please use the correct email format</mat-error>
+        </mat-form-field>
+
+        <mat-form-field style="color:#550019">
+            <input type="text" ngModel matInput placeholder="Username" name="username"
+            required #usernameInput="ngModel">
+            <mat-error *ngIf="usernameInput.hasError('required')">Field should not be empty</mat-error>
+        </mat-form-field>
+
+        <mat-form-field cstyle="color:#550019" hintLabel="Please enter minimum 8 characters!">
+            <input type="password" ngModel matInput placeholder="Password" name="password"
+            required minlength="8" #passInput="ngModel"> 
+            <mat-hint align="end"> {{ passInput.value?.length }} / 8 </mat-hint> 
+        </mat-form-field>
+
+
+        <mat-checkbox style="color:#550019" ngModel name="acceptance" required>
+            I accept the terms of conditions of use.
+        </mat-checkbox>
+
+        <button type="submit" mat-raised-button style="color:#550019" [disabled]="f.invalid">Submit</button>
+
+        <mat-label style="color:red">{{ errorMessage }}</mat-label>
+        
+        <a routerLink="/login">Go to login form</a>
+    </form>
+</section>

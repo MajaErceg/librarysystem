@@ -1,0 +1,85 @@
+<header>
+  <!--Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(41, 110, 60)">
+    <div class="container">
+      <a class="navbar-brand" target="_blank" href="#">
+        <p class="img-fluid"
+          style=" border: 1px solid rgb(84, 140, 107); padding: 10px; font-size: 15px; color: azure; border-radius:  20px 4px ; background-color: rgb(3, 59, 28);">
+          LibrarySystem</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link p-3" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link p-3" href="users">Users</a></li>
+          <li class="nav-item"> <a class="nav-link p-3" href="add-users">Add users</a></li>
+
+        </ul>
+        <ul class="navbar-nav">
+          <li>
+            <button type="button" class="btn btn me-5" routerLink="/" style="background-color: azure;">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header> <br>
+
+
+<!-------TABELA-------------->
+
+
+<div class="container  justify-content-center mt-50 mb-50" >
+  <div class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg md:max-w-5xl">
+  <div class="card w-300"  style="background-color: rgba(146, 235, 149, 0.292);">
+    <div class="card-header header-elements-inline" >
+      <button style="margin-right: 10px;" class="btn" routerLink="/users"> Back</button>
+      <h3 class="card-title" > Renting history</h3>
+     
+      <div class="header-elements">
+        <div class="list-icons text-muted font-weight-light">
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive" style="background-color:  rgb(198, 228, 199, 0.7);">
+      <table class="table table-hover" >
+        <thead > 
+          <tr >
+            <th> Membership number</th>
+            <th> Date</th>
+            <th>Book name</th>
+            <th>Type of book</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor= "let r of renting">
+
+            <td> {{ r.membershipNumber}}</td>
+            <td> {{ r.date}}</td>
+            <td> {{ r.bookName}}</td>
+            <td> {{ r.type}}</td>
+            <td> {{ r.author}}</td>
+            <td >
+              <button style="margin-right: 10px; background-color: rgba(241, 55, 55, 0.734);" (click)="deleteRenting(r.membershipNumber)" class="btn btn-danger"> Delete</button>
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+</div>
+
+

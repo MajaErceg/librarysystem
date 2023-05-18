@@ -1,0 +1,280 @@
+<header>
+    <!--Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(41, 110, 60)">
+        <div class="container">
+            <a class="navbar-brand" target="_blank" href="#">
+                <img class="img-fluid" style="width: 100px; height: 50px;"src="assets/image/loader-img.gif">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item active" >
+                        <a class="nav-link p-3" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#about-us">About us</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#books">Books</a>
+                    </li> 
+                    <li class="nav-item"><a class="nav-link p-3" href="users">Library system</a></li>
+              
+   
+                </ul>
+                <ul class="navbar-nav" >
+                    <li>
+                    <button type="button" class="btn btn me-5" href="/login" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: azure;" >
+                        Login
+                      </button>
+                     
+                    </li>
+                    <li >
+                        <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="background-color: azure;">
+                            Register
+                          </button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <!------LOGIN FORM-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="button" class="btn btn" style="background-color: green; color:white ;">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!------REGISTER FORM-->
+ <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="exampleModalLabel">Register Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Fullname</label>
+                <input type="fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+             
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="button" class="btn btn" style="background-color: green; color:white ;">Register</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal" >Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+  <main>
+    <section>
+        <!--Carousel Slider -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a target="_blank" href="#"><img style= "width: 1468px; height: 500px;"src="assets/image/bk1.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a target="_blank" href="#"><img style= "width: 1468px; height: 500px;"src="assets/image/bk22.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a target="_blank" href="#"><img style= "width: 1468px; height: 500px;"src="assets/image/bk33.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="about-us" class="py-5" style="background-color: rgb(41, 110, 60)">
+        <div class="container" style="background-color: rgba(248, 255, 250, 0.3); border-radius: 10px;  padding: 30px;">
+            <div class="text-center py-4" >
+                <h2>F A Q</h2></div>
+           
+                
+                <h4>For how long can I borrow a book?</h4>
+                <p>Books can be borrowed for 21 days. This period can be extended by one week at a time, with a maximum of three weeks. Extending is free of charge
+                and can only be done if no one else made a reservation for that particular book. The status of your books
+                can be checked on your personal library account on our website.</p>
+                
+                <h4>How can I reserve a book?</h4>
+                <p>Search for the book via your personal library account on our website and click the "Reserve book" button. A reservations is valid for 7 days and costs $1,- per book. 
+                If the book is not picked-up after 7 days, the reservation will automatically be canceled.</p>		
+                
+                <h4>What happens if I can't return a book on time?</h4>
+                A fine of $0,20 per book is charged per day. When keeping a book in your possession that should have been returned, reservations
+                cannot be made and new orders cannot be picked up.  
+                
+                <h4>What happens if I lose a book?</h4>
+                <p>Please contact our customer service as soon as possible. The library will charge a small price for the book, depending
+                on its value.</p> 
+            
+        
+        </div>
+    </section>
+  
+    <section id="features" class="py-5 " style="background-color: rgb(208, 231, 223);">
+        <div class="container">
+            <div class="text-center py-4">
+                <h3>Three steps to your book </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 mb-2" style="padding-top: 20px;">
+                    <div class="box-part text-center" style="background-color: rgb(176, 241, 210); padding: 20px;">
+                        <i class="text-primary fas fa-search fa-3x mb-3" aria-hidden="true"></i>
+                        <div class="title">
+                            <h5>Serach</h5>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mb-2" style="padding-top: 20px;">
+                    <div class="box-part text-center" style="background-color: rgb(176, 241, 210);padding: 20px;">
+                        <i class="text-success fas fa-laptop fa-3x mb-3" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Pick out</h4>
+                        </div>
+                      
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mb-2" style="padding-top: 20px;">
+                    <div class="box-part text-center" style="background-color: rgb(176, 241, 210);padding: 20px;">
+                        <i class="text-danger fas fa-box-open fa-3x mb-3" aria-hidden="true"></i>
+                        <div class="title">
+                            <h4>Reserve</h4>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+   
+  
+    <section id="books" class="py-5 " style="background-color: rgb(208, 231, 223);">
+        <div class="container">
+            <div class="text-center py-4">
+                <h1>Our books</h1>
+            </div>
+           
+                  <div class="row">
+                   
+                      
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="#">
+                                        <img class="img-fluid" id="img" src="assets/image/book-1.png" alt="" >
+                                    </a>
+                                    <div class="card-body">
+                                      
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">By Jassa</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="#">
+                                        <img class="img-fluid" id="img" src="assets/image/book-2.png" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                    
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">By Jassa</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="#">
+                                        <img class="img-fluid" id="img" src="assets/image/book-3.png" alt="" >
+                                    </a>
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">By Jassa</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+        </div>
+    </section>
+  
+  </main>
+  
+  
+  <!---FOOTER-------------------->
+  <footer class="pt-4 pt-md-5 border-top" style="background-color: rgb(118, 235, 165, 0.7);">
+    <div class="container">
+        <div class="row" >
+            <p class="text-center py-4">Copyright 2022 | Maja Ercegovčević</p>
+        </div>
+    </div>
+    
+  </footer>

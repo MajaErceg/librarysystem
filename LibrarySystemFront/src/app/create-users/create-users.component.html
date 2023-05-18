@@ -1,0 +1,69 @@
+ <br>
+
+<br>
+<!----FORMA ---------------->
+<div class="container" >
+  <div class="row justify-content-center " >
+    <div class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg  mx-auto my-3 p-3" style="background-color: rgb(238, 248, 243);" >
+    <!-- <div class="card d-flex justify-content-center mx-auto my-3 p-5"> -->
+       <button class="btn" routerLink="/users">Back</button>
+       <h3 >Add user </h3>
+     
+      <form (ngSubmit) = "onSubmit()">
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Fullname </label>
+          <input type="text" class="form-control" id="fullname" [(ngModel)]="users.fullname" name="fullname">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Profession </label>
+          <input type="text" class="form-control" id="profession" [(ngModel)]="users.profession" name="profession">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Birth date</label>
+          <input type="date" class="form-control" id="birthDate" [(ngModel)]="users.birthDate" name="birthDate">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Address </label>
+          <input type="text" class="form-control" id="address" [(ngModel)]="users.address" name="address">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> City </label>
+          <input type="text" class="form-control" id="city" [(ngModel)]="users.city" name="city">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Phone number </label>
+          <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="users.phoneNumber" name="phoneNumber">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label> Membership number</label>
+          <input type="text" class="form-control" id="membershipNumber" [(ngModel)]="users.membershipNumber"
+            name="membershipNumber">
+        </div>
+      </div>
+
+
+      <div class="form-button pt-4">
+        <button type="submit" class="btn">
+          <span> Submit</span></button>
+      </div>
+
+    </form>
+    </div>
+  </div>
+</div>

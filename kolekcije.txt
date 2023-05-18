@@ -1,0 +1,35 @@
+Za dodavanje knjiga, rezervaciju, uzimanje knjiga kao illnessHistory
+
+"membershipNumber" : "",
+    "date" : "",
+    "bookName": "",
+	"type" : "",
+    "author" : "",
+     "desc" : "",
+"images":""
+----------------------------------------------------
+
+Korisnik  pacijent
+  "libraryName": "",
+    "fullname" : "Milica Milic",
+    "" : "",
+    "birthDate" : "1991-01-05",
+"profession":"",
+    "address" : "Zarka Zrenjanina 99",
+     "city":"",
+    "phoneNumber":""
+    "membershipNumber" : "11448"
+
+{
+    "libraryName": "Gradska biblioteka",
+    "fullname" : "Milica Milic",
+    "profession":"Art",
+    "birthDate" : "1991-01-05",
+    "address" : "Zarka Zrenjanina 99",
+    "city":" Beograd",
+    "phoneNumber":"0622222222",
+    "membershipNumber" : "11223"
+}
+
+
+------------------------------------------------
